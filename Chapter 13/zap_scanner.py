@@ -17,7 +17,7 @@ import requests
 class ZapScanner:
     def get_active_scan_status(self):
         params = {'apikey': '4qot4rnp1vi7f6qaa10080528a'}
-        response = requests.get(f'http://localhost:8080/JSON/ascan/action/scan/', params=params)
+        response = requests.get('http://localhost:8080/JSON/ascan/action/scan/', params=params)
 
         if (response.status_code == 200):
             json_response = response.json()
@@ -28,7 +28,7 @@ class ZapScanner:
 
     def get_alert_summary(self):
         params = {'apikey': '4qot4rnp1vi7f6qaa10080528a'}
-        response = requests.get(f'http://localhost:8080/JSON/alert/view/alertsSummary/', params=params)
+        response = requests.get('http://localhost:8080/JSON/alert/view/alertsSummary/', params=params)
 
         if (response.status_code == 200):
             json_response = response.json()

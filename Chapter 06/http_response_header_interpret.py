@@ -28,7 +28,7 @@ class HttpResponseHeaderInterpreter:
                 print('Value of X-Frame-Options OK')
             else:
                 print('Either X-Frame-Options not set or \"DENY\" / \"SAMEORIGIN\" not found in X-Frame-Options. Changing the value to \"DENY\" / \"SAMEORIGIN\" recommended')
-        except:
+        except Exception:
             print('Either X-Frame-Options not set or \"DENY\" / \"SAMEORIGIN\" not found in X-Frame-Options. Changing the value to \"DENY\" / \"SAMEORIGIN\" recommended')
 
         try:
@@ -38,7 +38,7 @@ class HttpResponseHeaderInterpreter:
                 print('Value of X-Content-Type-Options OK')
             else:
                 print('Either X-Content-Type-Options not set or \"nosniff\" not found in X-Content-Type-Options. Changing the value to \"nosniff\" recommended')
-        except:
+        except Exception:
             print('Either X-Content-Type-Options not set or \"nosniff\" not found in X-Content-Type-Options. Changing the value to \"nosniff\" recommended')
 
 

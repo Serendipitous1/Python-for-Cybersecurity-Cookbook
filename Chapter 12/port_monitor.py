@@ -29,7 +29,7 @@ class PortMonitor:
             if connection.laddr[1] == FTP_PORT2:
                 ftp_port2_open = True
 
-        if (ftp_port1_open == True or ftp_port2_open == True):
+        if (ftp_port1_open or ftp_port2_open):
             print('FTP port found open')
         else:
             print('FTP port found closed')

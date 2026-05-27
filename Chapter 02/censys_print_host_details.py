@@ -21,7 +21,7 @@ class CensysHostDetails:
     def print_host_details(self, ip_address) -> json:
         try:
             ipinfo = censys_host.view(ip_address)
-        except:
+        except Exception:
             ipinfo = {}
 
         print(json.dumps(ipinfo, indent=4))

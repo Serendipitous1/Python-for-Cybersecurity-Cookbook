@@ -13,7 +13,6 @@ Created:
 """
 
 import os
-import platform
 
 # Set the location of the file to read from the current directory
 __location__ = os.path.realpath(os.path.join(

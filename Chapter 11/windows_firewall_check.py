@@ -22,7 +22,7 @@ class WindowsFirewall:
         firewall_active = windows_firewall.is_firewall_active()
         print('Windows firewall status:', firewall_active)
 
-        if firewall_active == True:
+        if firewall_active:
             # Use netsh command through subprocess to get details about all the profiles
             print(subprocess.check_call('netsh advfirewall show allprofiles'))
         else:

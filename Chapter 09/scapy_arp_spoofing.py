@@ -13,7 +13,6 @@ Created:
 """
 
 import scapy.all as scapy
-import time
 
 
 class ScapyArpSpoofing:

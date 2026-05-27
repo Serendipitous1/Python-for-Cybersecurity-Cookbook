@@ -33,7 +33,7 @@ class ApivoidDomainReputation:
             r = requests.get(url='https://endpoint.apivoid.com/'+endpoint +
                              '/v1/pay-as-you-go/?key='+apivoid_key+'&host='+host)
             return json.loads(r.content.decode())
-        except:
+        except Exception:
             return {}
 
 
