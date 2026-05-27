@@ -12,7 +12,6 @@ Created:
 """
 
 from googlesearch import search
-from sympy import Q
 
 
 class GoogleSearch:

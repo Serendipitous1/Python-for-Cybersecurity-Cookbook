@@ -12,7 +12,6 @@ Created:
 """
 
 import pyshark
-import json
 
 
 class WirelessSniffer:

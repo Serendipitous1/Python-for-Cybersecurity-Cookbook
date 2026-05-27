@@ -12,7 +12,6 @@ Created:
     29 November, 2022
 """
 
-import io
 from fierce import fierce
 import dns.name
 import dns.resolver

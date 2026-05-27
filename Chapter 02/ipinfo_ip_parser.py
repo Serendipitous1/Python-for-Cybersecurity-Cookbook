@@ -24,7 +24,7 @@ class IpinfoDetails:
         try:
             global handler
             ipinfo_details = handler.getDetails(ip_address)
-        except:
+        except Exception:
             ipinfo_details = {}
 
         # First convert the response to JSON using json.dumps and then load it in a JSON object

@@ -11,7 +11,7 @@ Created:
     03 October, 2022
 """
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 
 # Create a Flask app which will run on http://127.0.0.1:5000/ as default
 app = Flask(__name__)

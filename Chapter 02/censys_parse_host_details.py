@@ -21,7 +21,7 @@ class CensysHostDetailsParser:
     def print_host_details(self, ip_address) -> json:
         try:
             ipinfo = censys_host.view(ip_address)
-        except:
+        except Exception:
             ipinfo = {}
 
         # First convert the response to JSON using json.dumps and then load it in a JSON object
